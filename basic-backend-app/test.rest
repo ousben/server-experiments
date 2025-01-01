@@ -1,0 +1,23 @@
+### File to test the effectiveness of my Backend using REST client extension
+
+### Test GET / Home Wesite
+GET http://localhost:2424
+
+
+### Test GET / Dashboard Wesite
+GET http://localhost:2424/dashboard
+
+### Data Endpoint
+GET http://localhost:2424/api/data
+
+### Data Endpoint
+POST http://localhost:2424/api/data
+Content-Type: application/json
+
+{
+    "firstName": "Mary",
+    "lastName": "Poppins",
+    "age": "67",
+    "job": "nanny",
+    "hobbies": ["children", "shopping"]
+}
