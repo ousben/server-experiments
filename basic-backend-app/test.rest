@@ -21,3 +21,6 @@ Content-Type: application/json
     "job": "nanny",
     "hobbies": ["children", "shopping"]
 }
+
+### Data Endpoint
+DELETE http://localhost:2424/api/data

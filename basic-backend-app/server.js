@@ -55,6 +55,11 @@ app.post("/api/data", (req, res) => {
     res.sendStatus(201)
 })
 
+app.delete("/api/data", (req, res) => {
+    data.pop()
+    console.log("We deleted the last user")
+    res.sendStatus(203)
+})
 
 // This command listen to the server when it is run.
 app.listen(PORT, function() {
