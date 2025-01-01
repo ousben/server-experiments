@@ -84,7 +84,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 [Ousben](https://github.com/ousben) - [Email coming soon]
 
-Project Link: [https://github.com/[your-username]/server-experiments](https://github.com/[your-username]/server-experiments)
+Project Link: [https://github.com/ousben/server-experiments](https://github.com/[your-username]/server-experiments)
 
 ---
 
