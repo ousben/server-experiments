@@ -1,0 +1,5 @@
+# Git will ignore my secret environment variables
+/.env
+
+# Git will ignore 
+node_modules/
