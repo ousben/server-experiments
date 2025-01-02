@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App | Node.JS Express.JS SQLite</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="auth">
+        <div>
+            <h2 className="sign-up-text">Login</h2>
+            <p>Create an account!</p>
+        </div>
+
+        <p id="error" style="display: none;"></p>
+        <input id="emailInput" placeholder="Email" />
+        <input id="passwordInput" placeholder="********" type="password" />
+        <button id="authBtn" onclick="authenticate()">
+            Submit
+        </button>
+        <hr />
+        <div class="register-content">
+            <p>Don&apos;t have an account?</p>
+            <button onclick="toggleIsRegister()" id="registerBtn">Sign up</button>
+        </div>
+    </section>
+    <header style="display: none;">
+        <h1 class="text-gradient">You have 0 open tasks.</h1>
+    </header>
+    <nav style="display: none;" class="tab-container">
+        <button onclick="changeTab('All')" class="tab-button  selected-tab">
+            <h4>All <span>(0)</span></h4>
+        </button>
+        <button onclick="changeTab('Open')" class="tab-button  ">
+            <h4>Open <span>(0)</span></h4>
+        </button>
+        <button onclick="changeTab('Complete')" class="tab-button  ">
+            <h4>Complete <span>(0)</span></h4>
+        </button>
+        <hr />
+    </nav>
+    <main style="display: none;">
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
