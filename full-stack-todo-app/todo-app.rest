@@ -18,3 +18,29 @@ Content-Type: application/json
     "username": "Tim@gmail.com",
     "password": "123123123"
 }
+
+### Fetch all todos GET /TODOS (protected route)
+GET http://localhost:2442/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM1OTEyNjk4LCJleHAiOjE3MzU5OTkwOTh9.RZ_ohV-tJIpIWUTT8Rm0c48_OAwmc1s_pY3wTmAoYTo
+
+### Creates a new todo POST /TODOS (protected route
+POST http://localhost:2442/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM1OTEyNjk4LCJleHAiOjE3MzU5OTkwOTh9.RZ_ohV-tJIpIWUTT8Rm0c48_OAwmc1s_pY3wTmAoYTo
+Content-Type: application/json
+
+{
+    "task": "my project is loading"
+}
+
+### Update a todo PUT /TODOS/:ID (protected route)
+PUT http://localhost:2442/todos/2?page=4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM1OTEyNjk4LCJleHAiOjE3MzU5OTkwOTh9.RZ_ohV-tJIpIWUTT8Rm0c48_OAwmc1s_pY3wTmAoYTo
+Content-Type:  application/json
+
+{
+    "completed": 1
+}
+
+### Delete a todo DELETE /TODOS/:ID (protected route)
+DELETE http://localhost:2442/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM1OTEyNjk4LCJleHAiOjE3MzU5OTkwOTh9.RZ_ohV-tJIpIWUTT8Rm0c48_OAwmc1s_pY3wTmAoYTo
