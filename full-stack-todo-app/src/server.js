@@ -1,9 +1,13 @@
 import express from "express"
 import path,  { dirname } from "path"
 import { fileURLToPath } from "url"
+import dotenv from 'dotenv'
+import authRoutes from "./routes/authRoutes.js"
+import todoRoutes from "./routes/todoRoutes.js"
 
 const app = express()
 const PORT = process.env.PORT || 2442
+dotenv.config()
 
 // Get The file path from the URL of the current module
 const __filename = fileURLToPath(import.meta.url)
@@ -21,6 +25,10 @@ app.use(express.static(path.join(__dirname, "../public")))
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"))
 })
+
+// Routes
+app.use("/auth", authRoutes)
+app.use("/todos", todoRoutes)
 
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`)

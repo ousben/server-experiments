@@ -1,11 +1,11 @@
-import { DatabaseSync } from "node:sqlite"
+import Database from 'better-sqlite3';
 
 // Database initialization
-const db = new DatabaseSync(":memory:")
+const db = new Database(':memory:');
 
 // Execute SQL statements from strings
 db.exec(`
-    CREATE TABLE user (
+    CREATE TABLE users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT UNIQUE,
         password TEXT

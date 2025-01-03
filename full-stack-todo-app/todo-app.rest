@@ -1,0 +1,20 @@
+### GET method to grab all the website
+GET http://localhost:2442
+
+### POST method to register a new user
+POST http://localhost:2442/auth/register
+Content-Type: application/json
+
+{
+    "username": "Tim@gmail.com",
+    "password": "123123123"
+}
+
+### POST method to login a user
+POST http://localhost:2442/auth/login
+Content-Type: application/json
+
+{
+    "username": "Tim@gmail.com",
+    "password": "123123123"
+}
